@@ -10,7 +10,7 @@ This is a simple blog project built with Django. The backend is handled using Dj
 tsekpoe/
 ├── manage.py
 │
-├── frontend/                 # Frontend working directory (HTML & CSS only)
+├── frontend/                 # Your working directory (HTML & CSS only)
 │   ├── css/
 │   │   ├── responsive_styles.css
 │   │   ├── styles.css
@@ -26,26 +26,14 @@ tsekpoe/
 │   │   ├── main.html
 │   │   ├── readme.md
 │
-├── tblog/                    # Django app (backend)
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── views.py
-│   ├── migrations/
-│   │   ├── __init__.py
-│   ├── static/
-│   │   ├── fonts/
+├── tblog/                    # Django blog app (backend) (me)
+│   ├── ....
+│   ├── migrations/...
+│   ├── static/...
 │   │   │   ├── MILKER.OTF
-│   ├── templates/
+│   ├── templates/...
 │
-└── tsekpoe/                  # Django project settings
-    ├── __pycache__/
-    ├── asgi.py
-    ├── settings.py
-    ├── urls.py
-    ├── wsgi.py
-    ├── __init__.py
+└── tsekpoe/....              # Django project settings
 ```
 
 ## How We Work Together
@@ -84,8 +72,4 @@ tsekpoe/
 ## Need Help?
 
 If there are any questions, reach out in the project chat or issue tracker on GitHub or if you prefer, DM me
-
----
-
-Happy coding! 🚀
 
