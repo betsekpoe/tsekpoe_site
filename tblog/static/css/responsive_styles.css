@@ -1,0 +1,34 @@
+@media (max-width: 672px) {
+  :root {
+    --font_normal: 7;
+    --font_large: calc(var(--font_normal) * 10pt);
+    --searchbox_width: 100%;
+  }
+
+  header nav .main_logo .purple {
+    font-size: 10pt;
+  }
+
+  main {
+    ul li {
+        margin: 20px 0px;
+    }
+    
+    .search_container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      input,
+      button {
+        width: 100% !important;
+        border-radius: 32.89px !important;
+      }
+    }
+  }
+
+  .github ul {
+    visibility: visible;
+    opacity: 1;
+  }
+}
