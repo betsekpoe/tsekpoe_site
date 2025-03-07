@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if posts %}
+    <div class="posts" style="border: 1px solid white; padding: 10px; border-radius: 20px; height: fit-content">
+        <h2>POSTS</h2><br>
+        {% for post in posts %}
+
+            <div class="postCard" style="color: black; background: antiquewhite; padding: 10px; border-radius: 10px; width: 40%">
+                <h1>{{ post.title }}</h1>
+
+                <span class="date"  style="font-size: var(--font_smaller); color: var(--muted_purple)">
+                    {% if post.is_today %}
+                        JUST NOW
+                    {% elif post.is_recent_post %}
+                        NEW
+                    {% else %}
+                        {{ post.date }}
+                    {% endif %}
+                </span>
+            <br><br><hr>
+
+            <img src="{{ post.image.url }}" alt="image for {{ post.title }}" style="height: 100px">
+            <hr>
+            <p>{{ post.excerpt }}</p>
+            <hr>
+            <p>{{ post.tags }}</p>
+            </div>
+
+        {% endfor %}
+    </div>
+
+    {% else %}
+    <p>No posts yet</p>
+{% endif %}
+
+{% endblock %}
+
+
