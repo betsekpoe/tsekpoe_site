@@ -65,6 +65,7 @@ body {
     transparent 10%
   );
   background-size: 20px 20px;
+
   font-size: var(--font_normal);
   color: var(--white);
   margin: 30px;
@@ -188,3 +189,4 @@ main {
     }
   }
 }
+

@@ -2,11 +2,11 @@
 
 {% block content %}
 {% if posts %}
-    <div class="posts" style="border: 1px solid white; padding: 10px; border-radius: 20px; height: fit-content">
+    <div class="posts" style="border: 1px solid white; padding: 10px; border-radius: 20px; height: fit-content; flex-direction: row; flex-wrap: wrap">
         <h2>POSTS</h2><br>
         {% for post in posts %}
 
-            <div class="postCard" style="color: black; background: antiquewhite; padding: 10px; border-radius: 10px; width: 40%">
+            <div class="postCard" style="color: black; background: antiquewhite; padding: 10px; border-radius: 10px; margin-bottom: 50px;">
                 <h1>{{ post.title }}</h1>
 
                 <span class="date"  style="font-size: var(--font_smaller); color: var(--muted_purple)">
