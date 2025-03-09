@@ -28,6 +28,7 @@ i {
   --icon_size: 30pt;
   font-size: var(--icon_size);
   width: fit-content;
+  margin: 0px 8px;
 
   &:hover {
     cursor: pointer;
@@ -97,6 +98,7 @@ header {
     }
   }
 }
+
 
 main {
   display: flex;
