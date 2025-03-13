@@ -32,6 +32,7 @@ i {
 
   &:hover {
     cursor: pointer;
+    color: var(--purple);
   }
 }
 
@@ -158,13 +159,6 @@ main {
   position: fixed;
   top: 82%;
 
-  &:hover {
-    ul {
-      visibility: visible;
-      opacity: 1;
-      transition: visibility 0s, opacity 0.3s ease-in-out;
-    }
-  }
 
   ul {
     border-radius: 8px;
@@ -172,8 +166,10 @@ main {
     border: 1px solid var(--muted_white);
     visibility: hidden;
     opacity: 0;
+    width: fit-content;
+    transition: 0.3s ease-in;
 
-    li {
+     li {
       list-style: none;
       padding: 10px;
 
